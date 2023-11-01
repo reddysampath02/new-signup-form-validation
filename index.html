@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User SignUp form</title>
+
+    <!-- css file link -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>New user Signup</h1>
+    <section>
+        <input type="text" oninput="nameResult()" id="firstName" placeholder="firstname">
+        <p id="firstNameErr">FirstName should contain 5 - 15 characters</p>
+
+        <input type="text" oninput="userResult()" id="userName" placeholder="username">
+        <p id="userErr">Username must be and contain 5 - 12 characters</p>
+
+        <input type="email" oninput="emailResult()" id="email" placeholder="email">
+        <p id="emailErr">Email must be a valid address, e.g. me@mydomain.com</p>
+
+        <input type="password" oninput="passwordResult()" id="password" placeholder="password">
+        <p id="passwordErr">Password must alphanumaric(@,_and_ are also alloewd) and be 8 - 20 characters</p>
+
+        <input type="tel" oninput="telresult()" id="telnum" placeholder="telephone">
+        <p id="telnumErr">Telephone must be valid indian telephone number(10 digits)</p>
+
+        <input type="text" oninput="panResults()" id="pan" placeholder="panCard">
+        <p id="panErr">must be a valid PanCard Number</p>
+    </section>
+
+    <!-- javascript link -->
+    <script src="./javascript.js"></script>
+</body>
+</html>
